@@ -14,7 +14,6 @@ Source0: https://github.com/fabiangreffrath/%{name}/archive/refs/tags/%{name}-%{
 
 BuildRequires: gcc
 BuildRequires: make
-BuildRequires: cmake
 BuildRequires: python3
 BuildRequires: zlib-devel
 BuildRequires: libpng-devel
@@ -45,12 +44,14 @@ savegave, netplay, and demo compatible with the original.
 %autosetup -p1 -n %{name}-%{name}-%{version}
 
 # Unlike chocolate doom, we have to make things a difficult.
-./autogen.sh
+autoreconf -fi
 
 %build
+%configure
 %make_build
 
 %install
+rm -rf %{buildroot}
 %make_install DESTDIR=%{buildroot} \
   iconsdir="%{_datadir}/icons/hicolor/128x128/apps" \
   docdir="%{_pkgdocdir}"
