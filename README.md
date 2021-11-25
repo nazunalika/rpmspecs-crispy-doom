@@ -1,5 +1,5 @@
 rpmspecs-crispy-doom
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
 
 This is the RPM spec files that I have created for crispy-doom. I am not affiliated with the crispy-doom project and only provide this as a service.
 
