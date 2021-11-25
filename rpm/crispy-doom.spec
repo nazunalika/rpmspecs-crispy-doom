@@ -5,7 +5,7 @@
 
 Name:    crispy-doom
 Version: %{major_version}.%{minor_version}.%{micro_version}
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: A limit-removing Doom source port based on Chocolate Doom.
 
 License: GPLv2+
@@ -15,17 +15,17 @@ Source0: https://github.com/fabiangreffrath/%{name}/archive/refs/tags/%{name}-%{
 BuildRequires: gcc
 BuildRequires: make
 BuildRequires: python3
-BuildRequires: zlib-devel
-BuildRequires: libpng-devel
 BuildRequires: autoconf
 BuildRequires: automake
-BuildRequires: libsamplerate-devel
-BuildRequires: SDL2-devel
-BuildRequires: SDL2_mixer-devel
-BuildRequires: SDL2_net-devel
+BuildRequires: pkgconfig(zlib)
+BuildRequires: pkgconfig(libpng)
+BuildRequires: pkgconfig(samplerate)
+BuildRequires: pkgconfig(sdl2)
+BuildRequires: pkgconfig(SDL2_mixer)
+BuildRequires: pkgconfig(SDL2_net)
 
-Requires:      SDL_mixer
-Requires:      SDL_net
+Requires:      SDL2_mixer
+Requires:      SDL2_net
 Requires:      SDL2
 Requires:      zlib
 Requires:      libpng
@@ -94,5 +94,8 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_mandir}/man6/crispy-heretic-setup.6.gz
 
 %changelog
+* Wed Nov 24 2021 Louis Abel <tucklesepk@gmail.com> - 5.10.3-1
+- Clean up buildrequires and requires
+
 * Wed Nov 24 2021 Louis Abel <tucklesepk@gmail.com> - 5.10.3-1
 - Initial release for crispy doom
