@@ -15,7 +15,7 @@ Source0: https://github.com/fabiangreffrath/%{name}/archive/refs/tags/%{name}-%{
 BuildRequires: gcc
 BuildRequires: make
 BuildRequires: cmake
-BuildRequires: %{__python}
+BuildRequires: python3
 BuildRequires: zlib-devel
 BuildRequires: libpng-devel
 BuildRequires: autoconf
