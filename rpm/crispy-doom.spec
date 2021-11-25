@@ -84,18 +84,19 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_datadir}/bash-completion/completions/crispy-doom
 %{_datadir}/bash-completion/completions/crispy-heretic
 # man pages
-%{_mandir}/man5/default.cfg.5.gz
-%{_mandir}/man5/crispy-doom.cfg.5.gz
-%{_mandir}/man5/heretic.cfg.5.gz
-%{_mandir}/man5/crispy-heretic.cfg.5.gz
-%{_mandir}/man6/crispy-doom.6.gz
-%{_mandir}/man6/crispy-doom-setup.6.gz
-%{_mandir}/man6/crispy-heretic.6.gz
-%{_mandir}/man6/crispy-heretic-setup.6.gz
+%{_mandir}/man5/default.cfg.5*
+%{_mandir}/man5/crispy-doom.cfg.5*
+%{_mandir}/man5/heretic.cfg.5*
+%{_mandir}/man5/crispy-heretic.cfg.5*
+%{_mandir}/man6/crispy-doom.6*
+%{_mandir}/man6/crispy-doom-setup.6*
+%{_mandir}/man6/crispy-heretic.6*
+%{_mandir}/man6/crispy-heretic-setup.6*
 
 %changelog
 * Wed Nov 24 2021 Louis Abel <tucklesepk@gmail.com> - 5.10.3-1
 - Clean up buildrequires and requires
+- Fix man pages for mageia
 
 * Wed Nov 24 2021 Louis Abel <tucklesepk@gmail.com> - 5.10.3-1
 - Initial release for crispy doom
