@@ -4,7 +4,7 @@
 %global micro_version 0
 
 Name:    crispy-doom
-Version: %{major_version}.%{minor_version}.%{micro_version}
+Version: %{major_version}.%{minor_version}
 Release: 2%{?dist}
 Summary: A limit-removing Doom source port based on Chocolate Doom.
 
@@ -94,7 +94,7 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_mandir}/man6/crispy-heretic-setup.6*
 
 %changelog
-* Mon Jul 10 2023 Louis Abel <tucklesepk@gmail.com> - 6.0.0-1
+* Mon Jul 10 2023 Louis Abel <tucklesepk@gmail.com> - 6.0-1
 - Update to 6.0.0
 
 * Wed Nov 24 2021 Louis Abel <tucklesepk@gmail.com> - 5.10.3-1
