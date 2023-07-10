@@ -69,29 +69,51 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/crispy-server
 %{_bindir}/crispy-heretic
 %{_bindir}/crispy-heretic-setup
+%{_bindir}/crispy-hexen
+%{_bindir}/crispy-hexen-setup
+%{_bindir}/crispy-strife
+%{_bindir}/crispy-strife-setup
 # Application desktop files
 %{_datadir}/applications/io.github.fabiangreffrath.Setup.desktop
 %{_datadir}/applications/io.github.fabiangreffrath.Doom.desktop
 %{_datadir}/applications/io.github.fabiangreffrath.Heretic.desktop
+%{_datadir}/applications/io.github.fabiangreffrath.Hexen.desktop
+%{_datadir}/applications/io.github.fabiangreffrath.Strife.desktop
 %{_datadir}/applications/screensavers/io.github.fabiangreffrath.Doom_Screensaver.desktop
 # icons
 %{_datadir}/icons/hicolor/128x128/apps/crispy-doom.png
 %{_datadir}/icons/hicolor/128x128/apps/crispy-setup.png
+%{_datadir}/icons/hicolor/128x128/apps/crispy-heretic.png
+%{_datadir}/icons/hicolor/128x128/apps/crispy-hexen.png
+%{_datadir}/icons/hicolor/128x128/apps/crispy-strife.png
 # metainfo
 %{_datadir}/metainfo/io.github.fabiangreffrath.Doom.metainfo.xml
 %{_datadir}/metainfo/io.github.fabiangreffrath.Heretic.metainfo.xml
+%{_datadir}/metainfo/io.github.fabiangreffrath.Hexen.metainfo.xml
+%{_datadir}/metainfo/io.github.fabiangreffrath.Strife.metainfo.xml
 # bash completion
 %{_datadir}/bash-completion/completions/crispy-doom
 %{_datadir}/bash-completion/completions/crispy-heretic
+%{_datadir}/bash-completion/completions/crispy-hexen
+%{_datadir}/bash-completion/completions/crispy-strife
 # man pages
 %{_mandir}/man5/default.cfg.5*
 %{_mandir}/man5/crispy-doom.cfg.5*
 %{_mandir}/man5/heretic.cfg.5*
 %{_mandir}/man5/crispy-heretic.cfg.5*
+%{_mandir}/man5/crispy-hexen.cfg.5*
+%{_mandir}/man5/crispy-strife.cfg.5*
+%{_mandir}/man5/hexen.cfg.5*
+%{_mandir}/man5/strife.cfg.5*
 %{_mandir}/man6/crispy-doom.6*
 %{_mandir}/man6/crispy-doom-setup.6*
 %{_mandir}/man6/crispy-heretic.6*
 %{_mandir}/man6/crispy-heretic-setup.6*
+%{_mandir}/man6/crispy-hexen-setup.6.gz
+%{_mandir}/man6/crispy-hexen.6.gz
+%{_mandir}/man6/crispy-server.6.gz
+%{_mandir}/man6/crispy-strife-setup.6.gz
+%{_mandir}/man6/crispy-strife.6.gz
 
 %changelog
 * Mon Jul 10 2023 Louis Abel <tucklesepk@gmail.com> - 6.0-1
