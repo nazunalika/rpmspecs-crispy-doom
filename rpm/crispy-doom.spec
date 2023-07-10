@@ -1,7 +1,7 @@
 # Global settings
-%global major_version 5
-%global minor_version 10
-%global micro_version 3
+%global major_version 6
+%global minor_version 0
+%global micro_version 0
 
 Name:    crispy-doom
 Version: %{major_version}.%{minor_version}.%{micro_version}
@@ -94,6 +94,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_mandir}/man6/crispy-heretic-setup.6*
 
 %changelog
+* Mon Jul 10 2023 Louis Abel <tucklesepk@gmail.com> - 6.0.0-1
+- Update to 6.0.0
+
 * Wed Nov 24 2021 Louis Abel <tucklesepk@gmail.com> - 5.10.3-1
 - Clean up buildrequires and requires
 - Fix man pages for mageia
