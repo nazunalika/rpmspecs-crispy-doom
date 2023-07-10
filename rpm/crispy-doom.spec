@@ -109,11 +109,11 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_mandir}/man6/crispy-doom-setup.6*
 %{_mandir}/man6/crispy-heretic.6*
 %{_mandir}/man6/crispy-heretic-setup.6*
-%{_mandir}/man6/crispy-hexen-setup.6.gz
-%{_mandir}/man6/crispy-hexen.6.gz
-%{_mandir}/man6/crispy-server.6.gz
-%{_mandir}/man6/crispy-strife-setup.6.gz
-%{_mandir}/man6/crispy-strife.6.gz
+%{_mandir}/man6/crispy-hexen-setup.6*
+%{_mandir}/man6/crispy-hexen.6*
+%{_mandir}/man6/crispy-server.6*
+%{_mandir}/man6/crispy-strife-setup.6*
+%{_mandir}/man6/crispy-strife.6*
 
 %changelog
 * Mon Jul 10 2023 Louis Abel <tucklesepk@gmail.com> - 6.0-1
