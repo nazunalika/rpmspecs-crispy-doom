@@ -97,23 +97,8 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_datadir}/bash-completion/completions/crispy-hexen
 %{_datadir}/bash-completion/completions/crispy-strife
 # man pages
-%{_mandir}/man5/default.cfg.5*
-%{_mandir}/man5/crispy-doom.cfg.5*
-%{_mandir}/man5/heretic.cfg.5*
-%{_mandir}/man5/crispy-heretic.cfg.5*
-%{_mandir}/man5/crispy-hexen.cfg.5*
-%{_mandir}/man5/crispy-strife.cfg.5*
-%{_mandir}/man5/hexen.cfg.5*
-%{_mandir}/man5/strife.cfg.5*
-%{_mandir}/man6/crispy-doom.6*
-%{_mandir}/man6/crispy-doom-setup.6*
-%{_mandir}/man6/crispy-heretic.6*
-%{_mandir}/man6/crispy-heretic-setup.6*
-%{_mandir}/man6/crispy-hexen-setup.6*
-%{_mandir}/man6/crispy-hexen.6*
-%{_mandir}/man6/crispy-server.6*
-%{_mandir}/man6/crispy-strife-setup.6*
-%{_mandir}/man6/crispy-strife.6*
+%{_mandir}/man5/*.6*
+%{_mandir}/man6/*.5*
 
 %changelog
 * Tue Dec 02 2025 Louis Abel <tucklesepk@gmail.com> - 7.1-1
