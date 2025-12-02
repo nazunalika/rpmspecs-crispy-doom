@@ -1,11 +1,11 @@
 # Global settings
-%global major_version 6
-%global minor_version 0
+%global major_version 7
+%global minor_version 1
 %global micro_version 0
 
 Name:    crispy-doom
 Version: %{major_version}.%{minor_version}
-Release: 2%{?dist}
+Release: 1%{?dist}
 Summary: A limit-removing Doom source port based on Chocolate Doom.
 
 License: GPLv2+
@@ -116,6 +116,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_mandir}/man6/crispy-strife.6*
 
 %changelog
+* Tue Dec 02 2025 Louis Abel <tucklesepk@gmail.com> - 7.1-1
+- Update to 7.1.0
+
 * Mon Jul 10 2023 Louis Abel <tucklesepk@gmail.com> - 6.0-1
 - Update to 6.0.0
 
